@@ -2,6 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
+## Descrição Desafio
+Desafio Angular
+
+Criar um formulário para cadastrar os seguintes dados:
+* Nome
+* 1º nota
+* 2º nota
+
+Abaixo haverá uma tabela com o nome do aluno, a média e a condição (Aprovado ou Reprovado).
+Cada aluno terá um botão para alterar ou excluir seus dados.
+Cadastre essas informações em um array.
+
+## Site
+https://lucasgyn94.github.io/desafio-angular-proway/#/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
