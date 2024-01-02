@@ -1,0 +1,64 @@
+.alunos-cadastro__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 1024px;
+    
+}
+
+
+.label-cadastro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.btn-cadastrar__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-cadastrar {
+    display: flex;
+    width: 120px;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-cadastrar:hover {
+    background-color: black;
+    color: white;
+}
+
+.formulario-alunos-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    width: 400px;
+    font-size: 16px;
+    padding: 0.5rem;
+}

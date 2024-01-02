@@ -1,0 +1,93 @@
+.lista_alunos__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+
+}
+
+.titulo-lista-alunos {
+    margin-bottom: 1.5rem;
+}
+
+.tabela-alunos th {
+    padding: 0.5rem
+}   
+
+.tabela-alunos .linha-aluno {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.reprovado {
+    color: red;
+}
+
+.aprovado {
+    color: green;
+}
+
+.linha-aluno__nome {
+    padding: 0.5rem;
+}
+
+.linha-aluno__acoes {
+    padding: 0.5rem;
+}
+
+
+.linha-aluno__acoes button {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 80px;
+    cursor: pointer;
+
+
+}
+
+.linha-aluno__acoes button:hover {
+    background-color: black;
+    color: white;
+}
+
+.linha-edicao {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+.linha-edicao button {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    gap: 5px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.linha-edicao button:hover {
+    background-color: black;
+    color: white;
+}
+
+.linha-edicao__acoes {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-edicao-nome,
+.input-edicao {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+}
+
+  
+@media only screen and (max-width: 550px) {
+    
+}

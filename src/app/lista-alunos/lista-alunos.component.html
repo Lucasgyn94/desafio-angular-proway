@@ -1,0 +1,55 @@
+<div class="lista_alunos__container">
+    <h2 class="titulo-lista-alunos" >Lista de Alunos</h2>
+    <table class="tabela-alunos" border="1">
+      <thead>
+        <tr>
+          <th class="cabecalho-tabela">Nome</th>
+          <th class="cabecalho-tabela" >Nota 1</th>
+          <th class="cabecalho-tabela">Nota 2</th>
+          <th class="cabecalho-tabela">Média</th>
+          <th class="cabecalho-tabela">Condições</th>
+          <th class="cabecalho-tabela">Ações</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <tr *ngFor="let aluno of alunos; let i = index" class="linha-aluno">
+          <td class="linha-aluno__nome">{{aluno.nome}}</td>
+          <td>{{aluno.nota1}}</td>
+          <td>{{aluno.nota2}}</td>
+          <td>{{calcularMedia(aluno)}}</td>
+          <td>
+            <span [ngClass]="{'reprovado': verificarCondicao(aluno) === 'Reprovado',
+                              'aprovado': verificarCondicao(aluno) === 'Aprovado'}">
+              {{verificarCondicao(aluno)}}
+            </span>
+          </td>
+          
+          <td class="linha-aluno__acoes">
+            <button (click)="iniciarEdicao(i)" class="btn-editar">Editar</button>
+            <button (click)="excluirAluno(i)" class="btn-excluir">Excluir</button>
+          </td>
+        </tr>
+  
+        <!-- Linha de edição -->
+        <tr *ngIf="alunoIndexEdicao !== -1" class="linha-edicao">
+          <td>
+            <input [(ngModel)]="alunoEmEdicao.nome" placeholder="Nome" class="input-edicao-nome">
+          </td>
+          <td>
+            <input  [(ngModel)]="alunoEmEdicao.nota1" type="number" placeholder="Nota 1" class="input-edicao">
+          </td>
+          <td>
+            <input [(ngModel)]="alunoEmEdicao.nota2" type="number" placeholder="Nota 2" class="input-edicao">
+          </td>
+          <td>{{calcularMedia(alunoEmEdicao)}}</td>
+          <td > {{verificarCondicao(alunoEmEdicao) }}</td>
+          <td class="linha-edicao__acoes">
+            <button (click)="salvarEdicao()" class="btn-salvar">Salvar</button>
+            <button (click)="cancelarEdicao()" class="btn-cancelar">Cancelar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

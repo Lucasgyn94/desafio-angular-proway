@@ -1,0 +1,17 @@
+<div class="alunos-cadastro__container">
+    <h2 class="titulo-alunos-cadastro">Cadastrar Alunos</h2>
+    <form class="formulario-alunos-cadastro" (ngSubmit)="cadastrarAluno()" >
+        <label for="nome" class="label-cadastro">Nome: </label>
+        <input type="text" id="nome" [(ngModel)]="novoAluno.nome" name="nome" required>
+
+        <label for="nota1" class="label-cadastro">1º Nota: </label>
+        <input type="number" id="nota1" [(ngModel)]="novoAluno.nota1" name="nota1" required>
+
+        <label for="nota1" class="label-cadastro">2º Nota: </label>
+        <input type="number" id="nota1" [(ngModel)]="novoAluno.nota2" name="nota2" required>
+        <div class="btn-cadastrar__container">
+            <button type="submit" class="btn-cadastrar">Cadastrar</button>
+        </div>
+    </form>
+    
+</div>
